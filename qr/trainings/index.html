@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona99 - Academia de Entrenamiento</title>
+    <style>
+        :root {
+            --primary-green: #00FF00;
+            --dark-bg: #000000;
+            --card-bg: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Banner Superior */
+        .banner {
+            width: 100%;
+            height: 180px;
+            background: url('../../assets/banner_black_bg.jpeg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .logo-container {
+            background: var(--dark-bg);
+            padding: 10px;
+            border-radius: 50%;
+            margin-bottom: -40px;
+            border: 2px solid var(--primary-green);
+        }
+
+        .logo {
+            width: 80px;
+            display: block;
+        }
+
+        .content {
+            margin-top: 50px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .slogan {
+            color: var(--primary-green);
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        /* Contenedor de Botones */
+        .menu-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-link {
+            background-color: var(--card-bg);
+            border: 1px solid #333;
+            border-left: 5px solid var(--primary-green);
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s, background-color 0.2s;
+            text-align: left;
+        }
+
+        .btn-link:active {
+            transform: scale(0.98);
+            background-color: #252525;
+        }
+
+        .btn-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        .btn-text span {
+            display: block;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .btn-text small {
+            color: #aaa;
+            font-size: 0.8rem;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.7rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="logo-container">
+            <img src="../../assets/logo.png" alt="Zona99 Logo" class="logo">
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Zona99 Academy</h1>
+        <p class="slogan">ACTITUD AL 100%</p>
+
+        <div class="menu-grid">
+            <a href="https://www.youtube.com/playlist?list=PLFIpOYFRRW8bC4FXbfyP97e9xbeq96Vk3" class="btn-link">
+                <div class="btn-icon">⚡</div>
+                <div class="btn-text">
+                    <span>Academia de Técnica</span>
+                    <small>Tutoriales paso a paso de cada ejercicio</small>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/playlist?list=PLFIpOYFRRW8ayV9Vmyd8vYaMVQ08bgdxd" class="btn-link">
+                <div class="btn-icon">🔥</div>
+                <div class="btn-text">
+                    <span>Rutinas Full Body</span>
+                    <small>Entrenamientos completos para poco tiempo</small>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/playlist?list=PLFIpOYFRRW8aoUHfOPWuE-n6BaNUChvb2" class="btn-link">
+                <div class="btn-icon">💪</div>
+                <div class="btn-text">
+                    <span>Tren Superior / Inferior</span>
+                    <small>Ejercicios específicos por bloques</small>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/playlist?list=PLFIpOYFRRW8btUzx0Am_h_IIi9NXFbcA6" class="btn-link">
+                <div class="btn-icon">🏃</div>
+                <div class="btn-text">
+                    <span>Cardio & Resistencia</span>
+                    <small>Sesiones de alta intensidad</small>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/playlist?list=PLFIpOYFRRW8azSV9Zdc45b1JIE7hm185o" class="btn-link">
+                <div class="btn-icon">🧘</div>
+                <div class="btn-text">
+                    <span>Movilidad y Recuperación</span>
+                    <small>Calentamientos y estiramientos guiados</small>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Zona99 Fitness - Exclusivo Clientes
+    </footer>
+
+</body>
+</html>
